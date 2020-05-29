@@ -1,31 +1,77 @@
-$color5c5766: #5c5766;
-$colorffffff: #ffffff;
+$reset-m-p: 0;
+$margn-cntr: 0 auto;
+$clr-ffffff: #ffffff;
+$clr-ffd670: #ffd670;
+$clr-c4c0cf: #c4c0cf;
+$clr-898d9d: #898d9d;
+$clr-cacaca: #cacaca;
+$clr-f3f3f3: #f3f3f3;
+$clr-fff0ca: #fff0ca;
+$clr-8d8d8d: #8d8d8d;
+$clr-f4d382: #f4d382;
+$clr-bec0c9: #bec0c9;
+$clr-f5f5f5: #f5f5f5;
+$clr-4a5561: #4a5561;
+$clr-615474: #615474;
+$clr-f4f4f4: #f4f4f4;
+$clr-373c4f: #373c4f;
+$clr-f8f8f8: #f8f8f8;
+$clr-fff1ce: #fff1ce;
+$clr-a5aabe: #a5aabe;
+$clr-5c5766: #5c5766;
+$clr-ffdb83: #ffdb83;
+$clr-e6e6e6: #e6e6e6;
+$clr-ffe39c: #ffe39c;
+$clr-dbdde5: #dbdde5;
+$clr-5b6074: #5b6074;
+$clr-736588: #736588;
+$clr-4f4b58: #4f4b58;
+$clr-524664: #524664;
+$clr-4e4460: #4e4460;
+$clr-e14414: #e14414;
+$clr-d0c6db: #d0c6db;
 
 @import '_fonts' 
     
-body
-    margin: 0;
+html, body
+    margin: 0 auto;
     padding: 0;
+    max-width: 1920px;
+    width: 100%;
 
 .header
     width: 100%;
-    background-color: $color5c5766;
+    min-width: 1800px;
+    background-color: $clr-5c5766;
 
 .nav
+    margin: $margn-cntr;
 
     &-list
+        margin: $reset-m-p;
+        padding: $reset-m-p;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         list-style-type: none;
 
         &-item
+            margin: $reset-m-p;
+            padding: $reset-m-p;
 
             &-link
                 text-decoration: none;
                 text-transform: uppercase;
-                color: $colorffffff;
+                color: $clr-ffffff;
 
 .nav__header
+    margin: $margn-cntr;
+    width: 70%;
+    min-width: 400px;
 
     &-list
+        // margin: $margn-cntr;
 
         &-item
 
@@ -35,3 +81,383 @@ body
                 font-weight: 700;
                 line-height: 89px;
                 letter-spacing: 1.5px;
+                outline: none;
+
+                &:hover
+                    color: $clr-ffd670;
+
+                &:active
+                    color: $clr-fff0ca;
+
+.header-content
+    margin: 156px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+.logo
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    position: relative;
+    border-radius: 50%;
+
+    &::before
+        content: "";
+        border-radius: 50%;
+        position: absolute;
+        
+.logo__header
+    margin: $margn-cntr;
+    width: 70px;
+    height: 70px;    
+    background-color: $clr-ffffff;
+
+    &::before
+        width: 100px;
+        height: 100px;
+        border: 1px solid $clr-ffffff;        
+
+    &-span
+        margin: 0 0 0 -5px;
+        width: 37px;
+        height: 25px;
+        line-height: 7px;
+        color: #4e4460;
+        font-family: "Pacifico";
+        font-size: 50px;
+        font-weight: bold;
+        letter-spacing: -4px;
+
+.header-text
+    margin: 65px auto 0 auto;
+    padding: $reset-m-p;
+    width: 67%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $clr-ffffff;
+
+    &-hello
+        margin: $margn-cntr;
+        display: block;
+        text-align: center;
+        font-family: "Roboto Slab";
+        font-size: 35px;
+        font-weight: 400;
+        line-height: 30px;
+        text-transform: uppercase;
+        letter-spacing: 1.4px;
+
+    &-my-name
+        margin: 30px auto;
+        font-family: "Roboto Slab";
+        font-weight: 300;
+        letter-spacing: 2.64px;
+        font-size: 66px;
+        line-height: 30px;
+
+    &-name
+        font-family: "Roboto Slab";
+        font-weight: 700;
+        letter-spacing: 2.64px;
+        text-transform: capitalize;
+        font-size: 66px;
+
+    &-prof
+        margin: $margn-cntr;
+        display: block;
+        text-align: center;
+        font-family: "Roboto Slab";
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 30px;
+        letter-spacing: 0.88px;
+
+.header-social
+    margin: 45px 0 168px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // max-width: 350px;
+    width: 25%;
+    min-width: 150px;
+
+.logo__header-social
+    margin: 0 37px;
+    width: 26px;
+    height: 26px;
+    position: relative;
+
+    &:hover .logo__header-social-link
+        fill: $clr-ffd670;
+
+    &:active .logo__header-social-link
+        fill: $clr-fff0ca;
+
+    &:hover::before
+        border: 2px solid $clr-ffd670;
+
+    &:active::before
+        border: 2px solid $clr-fff0ca;
+
+    &:first-of-type:hover::after
+        background-color: $clr-ffd670;
+
+    &:first-of-type:active::after
+        background-color: $clr-fff0ca;
+
+    &:last-of-type:hover::after
+        background-color: $clr-ffd670;
+
+    &:last-of-type:active::after
+        background-color: $clr-fff0ca;        
+
+    &::before
+        width: 48px;
+        height: 48px;
+        border: 2px solid $clr-c4c0cf; 
+
+    &:first-of-type::after
+        content: "";
+        display: block;
+        width: 100px;
+        height: 2px;
+        background-color: $clr-c4c0cf;
+        position: absolute;
+        left: -110px;
+
+    &:last-of-type::after
+        content: "";
+        display: block;
+        width: 100px;
+        height: 2px;
+        background-color: $clr-c4c0cf;
+        position: absolute;
+        left: 38px;            
+
+    &-link
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        outline: none;
+        fill: $clr-c4c0cf;
+        
+.header-about
+    margin: 0 auto 128px auto;
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+
+    &-info        
+        color: $clr-ffffff;
+        font-family: "Roboto Slab";
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 4.32px;
+        text-transform: capitalize;
+
+    &-answer
+        color: $clr-ffd670;
+        text-transform: uppercase;
+
+.about
+    margin: $margn-cntr;
+    padding: 119px 0 0 0;
+    width: 100%;
+    background-color: $clr-524664;
+
+.logo__about
+    margin: 0 auto;
+    width: 70px;
+    height: 70px;    
+    background-color: $clr-ffd670;
+    // overflow: hidden;
+    position: relative;
+
+    &::before
+        width: 100px;
+        height: 100px;
+        border: 1px solid $clr-ffd670;
+
+    &-img
+        position: absolute;
+        top: 18px;
+
+.about-txt
+    margin: 37px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-title
+        font-family: "Roboto Slab";
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: uppercase;
+        letter-spacing: 1.4px;
+        color: $clr-ffffff;
+
+        &::after
+            content: "";
+            display: block;
+            margin: 20px auto;
+            width: 93px;
+            height: 3px;
+            background-color: $clr-736588;
+
+    &-desc
+        color: $clr-d0c6db;
+        font-family: "Roboto Slab";
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 30px;
+        text-transform: uppercase;
+        letter-spacing: 0.64px;
+
+.about-content
+    margin: 108px auto 0 auto;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+
+    &-txt
+        width: 31%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        color: $clr-ffffff;
+
+        &-title
+            margin: 0 0 43px 0;
+            font-family: "Roboto Slab";
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 0.72px;
+            text-transform: uppercase;
+
+        &-subtitle
+            margin: 0 0 23px 0;
+            color: $clr-c4c0cf;
+            font-family: "Roboto Slab";
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0.6px;
+            text-transform: capitalize;
+
+        &-desc
+            margin: 0;
+            font-family: "Roboto Slab";
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 30px;
+            letter-spacing: 0.72px;
+
+            &:nth-last-of-type(2)
+                margin: 0 0 45px 0;
+
+            &-word
+                font-family: "Roboto Slab";
+                font-weight: 700;
+                letter-spacing: 0.6px;
+
+    &-circle
+        width: 28%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    &-skills
+        width: 31%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        color: $clr-ffffff;
+
+        &-meter
+            margin: 0 0 14px 0;
+            width: 100%;
+            height: 43px;
+            background-color: $clr-615474;
+
+            &__progress
+                padding: 0 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 100%;
+                background-color: $clr-ffd670;
+                color: $clr-ffffff;
+                font-family: "Source Sans Pro";
+                font-size: 13px;
+                font-weight: 600;
+                line-height: 30px;
+                text-transform: uppercase;
+                box-sizing: border-box;
+
+                &-percent
+                    color: $clr-4a5561;
+                    font-family: "Source Sans Pro";
+                    font-weight: 900;
+                    letter-spacing: 0.52px;
+
+
+.logo__about-circle
+    width: 300px;
+    height: 300px;
+    background-color: $clr-ffd670;
+
+    &::before
+        width: 369px;
+        height: 369px;
+        border: 5px solid $clr-ffd670;
+
+.about-social
+    margin: 45px 0 115px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    // max-width: 350px;
+    width: 50%;
+    min-width: 250px;
+
+.logo__about-social
+    margin: 0 52px 0 0;
+    width: 26px;
+    height: 26px;
+    position: relative;
+
+    &:first-of-type
+        margin: 0 52px 0 13px;
+
+    &:hover .logo__about-social-link
+        fill: $clr-ffd670;
+
+    &:active .logo__about-social-link
+        fill: $clr-fff0ca;
+
+    &:hover::before
+        border: 2px solid $clr-ffd670;
+
+    &:active::before
+        border: 2px solid $clr-fff0ca;       
+
+    &::before
+        width: 48px;
+        height: 48px;
+        border: 2px solid $clr-c4c0cf; 
+
+    &-link
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        outline: none;
+        fill: $clr-c4c0cf;
