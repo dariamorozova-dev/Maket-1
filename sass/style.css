@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "Pacifico";
+  src: url("../fonts/Pacifico/Pacifico-Regular.eot");
+  src: url("../fonts/Pacifico/Pacifico-Regular.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/Pacifico/Pacifico-Regular.svg#Pacifico-Regular") format("svg");
+  src: url("../fonts/Pacifico/Pacifico-Regular.ttf") format("truetype");
+  src: url("../fonts/Pacifico/Pacifico-Regular.woff") format("woff");
+  src: url("../fonts/Pacifico/Pacifico-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../fonts/Roboto_Slab/RobotoSlab-Thin.eot");
+  src: url("../fonts/Roboto_Slab/RobotoSlab-Thin.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/Roboto_Slab/RobotoSlab-Thin.svg#RobotoSlab-Thin") format("svg");
+  src: url("../fonts/Roboto_Slab/RobotoSlab-Thin.ttf") format("truetype");
+  src: url("../fonts/Roboto_Slab/RobotoSlab-Thin.woff") format("woff");
+  src: url("../fonts/Roboto_Slab/RobotoSlab-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../fonts/Roboto_Slab/../fonts/Roboto_Slab/RobotoSlab-Light.eot");
+  src: url("../fonts/Roboto_Slab/../fonts/Roboto_Slab/RobotoSlab-Light.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/Roboto_Slab/../fonts/Roboto_Slab/RobotoSlab-Light.svg#RobotoSlab-Light") format("svg");
+  src: url("../fonts/Roboto_Slab/../fonts/Roboto_Slab/RobotoSlab-Light.ttf") format("truetype");
+  src: url("../fonts/Roboto_Slab/../fonts/Roboto_Slab/RobotoSlab-Light.woff") format("woff");
+  src: url("../fonts/Roboto_Slab/../fonts/Roboto_Slab/RobotoSlab-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../fonts/Roboto_Slab/RobotoSlab-Regular.eot");
+  src: url("../fonts/Roboto_Slab/RobotoSlab-Regular.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/Roboto_Slab/RobotoSlab-Regular.svg#RobotoSlab-Regular") format("svg");
+  src: url("../fonts/Roboto_Slab/RobotoSlab-Regular.ttf") format("truetype");
+  src: url("../fonts/Roboto_Slab/RobotoSlab-Regular.woff") format("woff");
+  src: url("../fonts/Roboto_Slab/RobotoSlab-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../fonts/Roboto_Slab/RobotoSlab-Bold.eot");
+  src: url("../fonts/Roboto_Slab/RobotoSlab-Bold.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/Roboto_Slab/RobotoSlab-Bold.svg#RobotoSlab-Bold") format("svg");
+  src: url("../fonts/Roboto_Slab/RobotoSlab-Bold.ttf") format("truetype");
+  src: url("../fonts/Roboto_Slab/RobotoSlab-Bold.woff") format("woff");
+  src: url("../fonts/Roboto_Slab/RobotoSlab-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Black.eot");
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Black.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Black.svg#SourceSansPro-Black") format("svg");
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Black.ttf") format("truetype");
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Black.woff") format("woff");
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-SemiBold.eot");
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-SemiBold.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-SemiBold.svg#SourceSansPro-SemiBold") format("svg");
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf") format("truetype");
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-SemiBold.woff") format("woff");
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-ExtraLight.eot");
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-ExtraLight.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-ExtraLight.svg#SourceSansPro-ExtraLight") format("svg");
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-ExtraLight.ttf") format("truetype");
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-ExtraLight.woff") format("woff");
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-ExtraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  background-color: #5c5766;
+}
+
+.nav-list {
+  list-style-type: none;
+}
+
+.nav-list-item-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.nav__header-list-item-link {
+  font-family: "Roboto Slab";
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 89px;
+  letter-spacing: 1.5px;
+}
+/*# sourceMappingURL=style.css.map */
