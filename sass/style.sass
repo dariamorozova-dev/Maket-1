@@ -30,6 +30,7 @@ $clr-524664: #524664;
 $clr-4e4460: #4e4460;
 $clr-e14414: #e14414;
 $clr-d0c6db: #d0c6db;
+$clr-c6a96c: #c6a96c;
 
 @import '_fonts' 
     
@@ -41,7 +42,7 @@ html, body
 
 .header
     width: 100%;
-    min-width: 1800px;
+    // min-width: 1800px;
     background-color: $clr-5c5766;
 
 .nav
@@ -227,7 +228,7 @@ html, body
         height: 2px;
         background-color: $clr-c4c0cf;
         position: absolute;
-        left: -110px;
+        left: -111px;
 
     &:last-of-type::after
         content: "";
@@ -408,7 +409,6 @@ html, body
                     font-weight: 900;
                     letter-spacing: 0.52px;
 
-
 .logo__about-circle
     width: 300px;
     height: 300px;
@@ -461,3 +461,438 @@ html, body
         text-decoration: none;
         outline: none;
         fill: $clr-c4c0cf;
+
+.portfolio
+    margin: $margn-cntr;
+    width: 100%;
+    background-color: $clr-ffd670;
+
+    &::before
+        content: "";
+        display: block;
+        height: 1px;
+        background-color: $clr-ffd670;
+
+    &-txt
+        margin: 37px auto 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-title
+            font-family: "Roboto Slab";
+            font-size: 35px;
+            font-weight: 700;
+            line-height: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1.4px;
+            color: $clr-ffffff;
+
+            &::after
+                content: "";
+                display: block;
+                margin: 20px auto;
+                width: 88px;
+                height: 3px;
+                background-color: $clr-fff0ca;
+
+        &-desc
+            color: $clr-fff0ca;
+            font-family: "Roboto Slab";
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 30px;
+            text-transform: uppercase;
+            letter-spacing: 0.64px;
+        
+.portfolio-content
+    margin: 125px auto 0 auto;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+
+    &-project
+        width: 31%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        color: $clr-ffffff;
+
+        &-category
+            margin: 0 0 30px 0;
+            color: $clr-fff1ce;
+            font-family: "Roboto Slab";
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 30px;
+            text-transform: uppercase;
+            letter-spacing: 0.64px;
+
+        &-title
+            width: 100%;
+            font-family: "Roboto Slab";
+            font-size: 23px;
+            font-weight: 700;
+            line-height: 30px;
+            letter-spacing: 0.92px;
+            text-transform: capitalize;
+
+            &::first-letter
+                text-transform: lowercase;
+
+            &::after
+                content: "";
+                margin: 25px 0 19px 0;
+                display: block;
+                width: 100%;
+                height: 2px;
+                background-color: $clr-ffe39c;
+
+        &-desc-list
+            margin: 0;
+            padding: 0;
+            width: 100%;
+
+            &-site::after
+                content: "";
+                margin: 25px 0 19px 0;
+                display: block;
+                width: 100%;
+                height: 2px;
+                background-color: $clr-ffe39c;
+
+            &-item
+                font-family: "Roboto Slab";
+                font-size: 15px;
+                font-weight: 300;
+                line-height: 30px;
+                letter-spacing: 0.6px;
+                text-transform: capitalize;
+                list-style-type: none;
+
+                &::before
+                    content: "";
+                    margin: 0 15px 0 31px;
+                    display: inline-block;
+                    width: 11px;
+                    height: 11px;
+                    background-image: url(../img/list-about.png)
+
+                &-site
+                    margin: -10px 0 0 0;
+                    text-transform: lowercase;
+
+        &-desc-txt
+            margin: 24px 0 12px 0;
+            font-family: "Roboto Slab";
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 30px;
+            letter-spacing: 0.6px;
+
+            &::after
+                content: "";
+                margin: 27px 0 10px 0;
+                display: block;
+                width: 100%;
+                height: 2px;
+                background-color: $clr-ffe39c;
+
+            &-tags
+                margin: -20px 0 0 0;
+                font-family: "Roboto Slab";
+                font-size: 15px;
+                font-weight: 300;
+                line-height: 30px;
+                letter-spacing: 0.6px;
+
+    &-slider
+        width: 65%;
+
+        &-wrp
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+            &-cross
+                display: block;
+                width: 25px;
+                height: 2px;
+                background-color: $clr-ffffff;
+                position: absolute;
+                top: 30px;
+                right: 20px;
+                z-index: 2;
+                transform: rotate(45deg);
+                opacity: 0.65;
+
+                &::after
+                    content: "";
+                    display: block;
+                    width: 25px;
+                    height: 2px;
+                    background-color: $clr-ffffff;
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                    z-index: 2;
+                    transform: rotate(90deg);
+
+            &-btn1-label
+                width: 63px;
+                height: 78px;
+                background-color: $clr-c6a96c;
+                position: absolute;
+                top: 42.5%;
+                left: 0;
+                z-index: 1;
+                border-radius: 0 20px 20px 0;
+
+                &:hover
+                    background-color: $clr-8d8d8d;
+
+                &:hover .portfolio-content-slider-wrp-btn1-label-span,
+                &:hover .portfolio-content-slider-wrp-btn1-label-span::before
+                    background-color: $clr-ffd670;
+
+                &:active
+                    background-color: $clr-373c4f;
+
+                &-span
+                    display: block;
+                    width: 35px;
+                    height: 3px;
+                    background-color: $clr-ffffff;
+                    transform: rotate(45deg);
+                    position: absolute;
+                    top: 49px;
+                    left: 6px;
+
+                    &::before
+                        content: "";
+                        display: block;
+                        width: 34px;
+                        height: 3px;
+                        background-color: $clr-ffffff;
+                        transform: rotate(90deg);
+                        position: absolute;
+                        top: -16px;
+                        left: -16px;
+
+            &-btn1-checkbox
+                visibility: hidden;
+
+            &-btn2-label
+                width: 63px;
+                height: 78px;
+                background-color: $clr-c6a96c;
+                position: absolute;
+                top: 42.5%;
+                right: 0;
+                z-index: 1;
+                border-radius: 20px 0 0 20px;
+
+                &:hover
+                    background-color: $clr-8d8d8d;
+
+                &:hover .portfolio-content-slider-wrp-btn2-label-span,
+                &:hover .portfolio-content-slider-wrp-btn2-label-span::before
+                    background-color: $clr-ffd670;
+
+                &:active
+                    background-color: $clr-373c4f;
+
+                &-span
+                    display: block;
+                    width: 35px;
+                    height: 3px;
+                    background-color: $clr-ffffff;
+                    transform: rotate(-135deg);
+                    position: absolute;
+                    top: 26px;
+                    left: 19px;
+
+                    &::before
+                        content: "";
+                        display: block;
+                        width: 34px;
+                        height: 3px;
+                        background-color: $clr-ffffff;
+                        transform: rotate(90deg);
+                        position: absolute;
+                        top: -16px;
+                        left: -16px;
+
+            &-btn2-checkbox
+                visibility: hidden;   
+                    
+
+            &-item1
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: $clr-5c5766;
+
+            &-item2
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                // background-color: $clr-615474;
+
+.nav__portfolio
+    margin: 76px auto 0 auto;
+    width: 50%;
+    min-width: 400px;
+
+    &-list
+        width: 100%;
+
+        &-item
+            width: 23%;
+
+            &-link
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 24px;
+                font-family: "Roboto Slab";
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 30px;
+                text-transform: uppercase;
+                letter-spacing: 0.48px;
+                outline: none;
+                border: 1px solid transparent;
+
+                &:hover
+                    border: 1px solid $clr-ffffff;
+                    border-radius: 5px;
+
+
+                &:active
+                    color: $clr-373c4f;
+                    border: 1px solid $clr-373c4f;
+                    border-radius: 5px;
+
+.portfolio-projects
+    margin: 80px auto 0 auto;
+    // padding: 0 0 145px 0;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // flex-wrap: wrap;
+
+    &-project
+        // margin: 0 50px;
+        width: 239px;
+        height: 239px;
+        background-color: $clr-fff0ca;
+        transform: rotate(45deg);
+        border-radius: 20px;
+
+        &:hover
+            background-color: $clr-524664;
+
+        &-wrp
+            margin: 11px -20px 0 0px;
+            transform: rotate(-45deg);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 50px;
+            left: 24px;
+
+        &-title
+            display: block;
+            text-align: center;
+            color: $clr-ffffff;
+            text-transform: capitalize;
+            font-family: "Roboto Slab";
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 30px;
+            letter-spacing: 0.64px;
+
+            &::first-letter
+                text-transform: lowercase;
+
+        &-desc
+            color: $clr-ffffff;
+            font-family: "Roboto Slab";
+            font-size: 13px;
+            font-weight: 300;
+            line-height: 20px;
+            letter-spacing: 0.52px;
+            text-align: center;
+
+        &-link
+            display: block;
+            width: 66px;
+            height: 66px;
+            background-color: $clr-e14414;
+            border-radius: 50%;  
+            position: relative;
+
+            &-span
+                display: block;
+                width: 24px;
+                height: 6px;
+                background-color: $clr-ffffff;
+                position: absolute;
+                top: 30px;
+                left: 21px;
+
+                &::after
+                    content: "";
+                    display: block;
+                    width: 24px;
+                    height: 6px;
+                    background-color: $clr-ffffff;
+                    transform: rotate(90deg);
+
+            &:hover
+                background-color: $clr-898d9d;
+            
+            &:hover .portfolio-projects-project-link-span,
+            &:hover .portfolio-projects-project-link-span::after
+                background-color: $clr-ffd670;
+
+            &:active
+                background-color: $clr-e6e6e6;
+
+            &:active .portfolio-projects-project-link-span,
+            &:active .portfolio-projects-project-link-span::after
+                background-color: $clr-373c4f;
+
+    &-project3
+        background-color: $clr-5c5766;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        &:hover
+            background-color: $clr-524664;
+
+    // &-project5
+    //     margin: 0 50px 0 220px;
+
+    // &-project7
+    //     margin: 0 220px 0 50px;
+
+.portfolio-projects2
+    margin: 0 auto;
+    padding: 0 0 145px 0;
+    width: 61%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // flex-wrap: wrap;

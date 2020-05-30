@@ -103,7 +103,6 @@ html, body {
 
 .header {
   width: 100%;
-  min-width: 1800px;
   background-color: #5c5766;
 }
 
@@ -353,7 +352,7 @@ html, body {
   height: 2px;
   background-color: #c4c0cf;
   position: absolute;
-  left: -110px;
+  left: -111px;
 }
 
 .logo__header-social:last-of-type::after {
@@ -682,5 +681,550 @@ html, body {
   text-decoration: none;
   outline: none;
   fill: #c4c0cf;
+}
+
+.portfolio {
+  margin: 0 auto;
+  width: 100%;
+  background-color: #ffd670;
+}
+
+.portfolio::before {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #ffd670;
+}
+
+.portfolio-txt {
+  margin: 37px auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio-txt-title {
+  font-family: "Roboto Slab";
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  color: #ffffff;
+}
+
+.portfolio-txt-title::after {
+  content: "";
+  display: block;
+  margin: 20px auto;
+  width: 88px;
+  height: 3px;
+  background-color: #fff0ca;
+}
+
+.portfolio-txt-desc {
+  color: #fff0ca;
+  font-family: "Roboto Slab";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.64px;
+}
+
+.portfolio-content {
+  margin: 125px auto 0 auto;
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.portfolio-content-project {
+  width: 31%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  color: #ffffff;
+}
+
+.portfolio-content-project-category {
+  margin: 0 0 30px 0;
+  color: #fff1ce;
+  font-family: "Roboto Slab";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.64px;
+}
+
+.portfolio-content-project-title {
+  width: 100%;
+  font-family: "Roboto Slab";
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.92px;
+  text-transform: capitalize;
+}
+
+.portfolio-content-project-title::first-letter {
+  text-transform: lowercase;
+}
+
+.portfolio-content-project-title::after {
+  content: "";
+  margin: 25px 0 19px 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #ffe39c;
+}
+
+.portfolio-content-project-desc-list {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.portfolio-content-project-desc-list-site::after {
+  content: "";
+  margin: 25px 0 19px 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #ffe39c;
+}
+
+.portfolio-content-project-desc-list-item {
+  font-family: "Roboto Slab";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.6px;
+  text-transform: capitalize;
+  list-style-type: none;
+}
+
+.portfolio-content-project-desc-list-item::before {
+  content: "";
+  margin: 0 15px 0 31px;
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  background-image: url(../img/list-about.png);
+}
+
+.portfolio-content-project-desc-list-item-site {
+  margin: -10px 0 0 0;
+  text-transform: lowercase;
+}
+
+.portfolio-content-project-desc-txt {
+  margin: 24px 0 12px 0;
+  font-family: "Roboto Slab";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.6px;
+}
+
+.portfolio-content-project-desc-txt::after {
+  content: "";
+  margin: 27px 0 10px 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #ffe39c;
+}
+
+.portfolio-content-project-desc-txt-tags {
+  margin: -20px 0 0 0;
+  font-family: "Roboto Slab";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.6px;
+}
+
+.portfolio-content-slider {
+  width: 65%;
+}
+
+.portfolio-content-slider-wrp {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.portfolio-content-slider-wrp-cross {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  z-index: 2;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  opacity: 0.65;
+}
+
+.portfolio-content-slider-wrp-cross::after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 2;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.portfolio-content-slider-wrp-btn1-label {
+  width: 63px;
+  height: 78px;
+  background-color: #c6a96c;
+  position: absolute;
+  top: 42.5%;
+  left: 0;
+  z-index: 1;
+  border-radius: 0 20px 20px 0;
+}
+
+.portfolio-content-slider-wrp-btn1-label:hover {
+  background-color: #8d8d8d;
+}
+
+.portfolio-content-slider-wrp-btn1-label:hover .portfolio-content-slider-wrp-btn1-label-span,
+.portfolio-content-slider-wrp-btn1-label:hover .portfolio-content-slider-wrp-btn1-label-span::before {
+  background-color: #ffd670;
+}
+
+.portfolio-content-slider-wrp-btn1-label:active {
+  background-color: #373c4f;
+}
+
+.portfolio-content-slider-wrp-btn1-label-span {
+  display: block;
+  width: 35px;
+  height: 3px;
+  background-color: #ffffff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  top: 49px;
+  left: 6px;
+}
+
+.portfolio-content-slider-wrp-btn1-label-span::before {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 3px;
+  background-color: #ffffff;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  position: absolute;
+  top: -16px;
+  left: -16px;
+}
+
+.portfolio-content-slider-wrp-btn1-checkbox {
+  visibility: hidden;
+}
+
+.portfolio-content-slider-wrp-btn2-label {
+  width: 63px;
+  height: 78px;
+  background-color: #c6a96c;
+  position: absolute;
+  top: 42.5%;
+  right: 0;
+  z-index: 1;
+  border-radius: 20px 0 0 20px;
+}
+
+.portfolio-content-slider-wrp-btn2-label:hover {
+  background-color: #8d8d8d;
+}
+
+.portfolio-content-slider-wrp-btn2-label:hover .portfolio-content-slider-wrp-btn2-label-span,
+.portfolio-content-slider-wrp-btn2-label:hover .portfolio-content-slider-wrp-btn2-label-span::before {
+  background-color: #ffd670;
+}
+
+.portfolio-content-slider-wrp-btn2-label:active {
+  background-color: #373c4f;
+}
+
+.portfolio-content-slider-wrp-btn2-label-span {
+  display: block;
+  width: 35px;
+  height: 3px;
+  background-color: #ffffff;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  position: absolute;
+  top: 26px;
+  left: 19px;
+}
+
+.portfolio-content-slider-wrp-btn2-label-span::before {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 3px;
+  background-color: #ffffff;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  position: absolute;
+  top: -16px;
+  left: -16px;
+}
+
+.portfolio-content-slider-wrp-btn2-checkbox {
+  visibility: hidden;
+}
+
+.portfolio-content-slider-wrp-item1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #5c5766;
+}
+
+.portfolio-content-slider-wrp-item2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.nav__portfolio {
+  margin: 76px auto 0 auto;
+  width: 50%;
+  min-width: 400px;
+}
+
+.nav__portfolio-list {
+  width: 100%;
+}
+
+.nav__portfolio-list-item {
+  width: 23%;
+}
+
+.nav__portfolio-list-item-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 24px;
+  font-family: "Roboto Slab";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.48px;
+  outline: none;
+  border: 1px solid transparent;
+}
+
+.nav__portfolio-list-item-link:hover {
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+
+.nav__portfolio-list-item-link:active {
+  color: #373c4f;
+  border: 1px solid #373c4f;
+  border-radius: 5px;
+}
+
+.portfolio-projects {
+  margin: 80px auto 0 auto;
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio-projects-project {
+  width: 239px;
+  height: 239px;
+  background-color: #fff0ca;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-radius: 20px;
+}
+
+.portfolio-projects-project:hover {
+  background-color: #524664;
+}
+
+.portfolio-projects-project-wrp {
+  margin: 11px -20px 0 0px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 50px;
+  left: 24px;
+}
+
+.portfolio-projects-project-title {
+  display: block;
+  text-align: center;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-family: "Roboto Slab";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.64px;
+}
+
+.portfolio-projects-project-title::first-letter {
+  text-transform: lowercase;
+}
+
+.portfolio-projects-project-desc {
+  color: #ffffff;
+  font-family: "Roboto Slab";
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.52px;
+  text-align: center;
+}
+
+.portfolio-projects-project-link {
+  display: block;
+  width: 66px;
+  height: 66px;
+  background-color: #e14414;
+  border-radius: 50%;
+  position: relative;
+}
+
+.portfolio-projects-project-link-span {
+  display: block;
+  width: 24px;
+  height: 6px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 30px;
+  left: 21px;
+}
+
+.portfolio-projects-project-link-span::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 6px;
+  background-color: #ffffff;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.portfolio-projects-project-link:hover {
+  background-color: #898d9d;
+}
+
+.portfolio-projects-project-link:hover .portfolio-projects-project-link-span,
+.portfolio-projects-project-link:hover .portfolio-projects-project-link-span::after {
+  background-color: #ffd670;
+}
+
+.portfolio-projects-project-link:active {
+  background-color: #e6e6e6;
+}
+
+.portfolio-projects-project-link:active .portfolio-projects-project-link-span,
+.portfolio-projects-project-link:active .portfolio-projects-project-link-span::after {
+  background-color: #373c4f;
+}
+
+.portfolio-projects-project3 {
+  background-color: #5c5766;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.portfolio-projects-project3:hover {
+  background-color: #524664;
+}
+
+.portfolio-projects2 {
+  margin: 0 auto;
+  padding: 0 0 145px 0;
+  width: 61%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
