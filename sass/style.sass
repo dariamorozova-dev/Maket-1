@@ -896,3 +896,218 @@ html, body
     justify-content: space-between;
     align-items: center;
     // flex-wrap: wrap;
+
+.blog
+    margin: 0 auto;
+    padding: 100px 0 0 0;
+    width: 100%;
+
+    &-wrp
+        margin: 102px 0 0 0;
+        display: flex;
+        justify-content: flex-end;
+
+    &-txt
+        margin: 37px auto 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-title
+            color: $clr-5b6074;
+            font-family: "Roboto Slab";
+            font-size: 35px;
+            font-weight: 700;
+            line-height: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1.4px;
+
+            &::after
+                content: "";
+                display: block;
+                margin: 20px auto;
+                width: 88px;
+                height: 3px;
+                background-color: $clr-dbdde5;
+
+        &-desc
+            color: $clr-a5aabe;
+            font-family: "Roboto Slab";
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 30px;
+            text-transform: uppercase;
+            letter-spacing: 0.64px;
+
+.blog-post
+    margin: 102px0 0 0;
+    width: 38.5%;
+
+    &-img-wrp
+        width: 100%;
+        border-radius: 10px;
+
+    &-img
+
+    &-title
+        color: $clr-373c4f;
+        font-family: "Roboto Slab";
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 37px;
+        text-transform: uppercase;
+        letter-spacing: 0.96px;
+
+    &-info
+        margin: 30px auto;
+        display: block;
+        width: 100%;
+        color: $clr-c4c0cf;
+        font-family: "Roboto Slab";
+        font-size: 11px;
+        font-weight: 300;
+        line-height: 22px;
+        text-transform: uppercase;
+        letter-spacing: 0.44px;
+
+        &-b
+            font-family: "Roboto Slab";
+            font-weight: 700;
+            letter-spacing: 0.44px;
+            color: $clr-c4c0cf;
+            font-size: 11px;
+            line-height: 22px;
+            text-transform: uppercase;
+            letter-spacing: 0.44px;
+
+    &-txt1
+        margin: 0;
+        color: $clr-898d9d;
+        font-family: "Roboto Slab";
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 30px;
+        letter-spacing: 0.6px;
+
+    &-txt2
+        margin: 50px 0 0 0;
+        color: $clr-898d9d;
+        font-family: "Roboto Slab";
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 30px;
+        letter-spacing: 0.6px;
+
+        &-b
+            font-family: "Roboto Slab";
+            font-weight: 700;
+            letter-spacing: 0.6px;
+            color: $clr-898d9d;
+            font-size: 15px;
+            line-height: 30px;
+
+    &-tag
+        display: block;
+        color: $clr-898d9d;
+        font-family: "Roboto Slab";
+        font-size: 13px;
+        line-height: 30px;
+        font-weight: 700;
+        letter-spacing: 0.52px;
+
+        &-tags
+            color: $clr-898d9d;
+            font-family: "Roboto Slab";
+            font-size: 13px;
+            line-height: 30px;
+            font-family: "Roboto Slab";
+            font-weight: 300;
+            letter-spacing: 0.52px;
+
+        &::before
+            content: "";
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            height: 1px;
+            background-color: $clr-f4f4f4;
+
+        &::after
+            content: "";
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            height: 1px;
+            background-color: $clr-f4f4f4;
+
+.blog-search
+    margin: 0;
+    padding: 0 0 0 30px;
+    width: 30.75%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    &-title
+        margin: 61px 0 40px 0;
+        color: $clr-898d9d;
+        font-family: "Roboto Slab";
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 15px;
+        text-transform: uppercase;
+        letter-spacing: 0.52px;
+
+        &-search
+            margin: 0 0 40px 0;
+
+        &-cat
+            margin: 61px 0 20px 0;
+
+        &-archives
+            margin: 42px 0 20px 0;
+
+    &-input
+        padding: 5px;
+        width: 42px;
+        height: 42px;
+        outline: none;
+        background-image: url('../img/search-blog.png');
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        border: none;
+        background-color: $clr-f8f8f8;
+
+        &:focus
+            width: 60%;
+            transition: width 1s ease-out;
+            background-position: 90%;
+
+    &-categories
+        padding: 0 0 0 30px;
+        color: $clr-bec0c9;
+        font-family: "Roboto Slab";
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 60px;
+        text-transform: uppercase;
+        letter-spacing: 0.52px;
+        text-decoration: none;
+        width: 80%;
+        border-bottom: 2px solid $clr-f8f8f8;
+
+        &:hover
+            color: $clr-524664;
+
+        &:active
+            color: $clr-ffd670;
+
+        &:nth-of-type(4)
+           border-bottom: 2px solid transparent;
+
+        &:last-of-type
+            border-bottom: 2px solid transparent;
+            
+
+       
