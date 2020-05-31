@@ -906,6 +906,7 @@ html, body
         margin: 102px 0 0 0;
         display: flex;
         justify-content: flex-end;
+        position: relative;
 
     &-txt
         margin: 37px auto 0 auto;
@@ -940,14 +941,16 @@ html, body
             letter-spacing: 0.64px;
 
 .blog-post
-    margin: 102px0 0 0;
     width: 38.5%;
 
     &-img-wrp
+        margin: 0 0 30px 0;
         width: 100%;
         border-radius: 10px;
 
     &-img
+        width: 100%;
+        display: block;
 
     &-title
         color: $clr-373c4f;
@@ -1040,10 +1043,283 @@ html, body
             height: 1px;
             background-color: $clr-f4f4f4;
 
+.blog-post-comments
+    width: 100%;
+
+    &-title
+        margin: 0 0 50px 0;
+        display: block;
+        color: $clr-898d9d;
+        font-family: "Roboto Slab";
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+
+    &-item
+
+        &::after
+            content: "";
+            margin: 40px 0;
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: $clr-f4f4f4;
+
+        &-photo
+            margin: 0;
+            display: flex;
+
+            &-img
+                display: block;
+                width: 70px;
+                height: 70px;
+                background-color: $clr-e6e6e6;
+                background-image: url(../img/comment-user.png);
+                background-size: 21px 24px;
+                background-position: 50%;
+                background-repeat: no-repeat;
+            
+        &-txt
+            margin: 0 0 0 20px;
+            width: 100%;
+
+            &-name
+                margin: 0 0 14px 0;
+                display: block;
+                color: $clr-ffdb83;
+                font-family: "Roboto Slab";
+                font-size: 13px;
+                font-weight: 700;
+                line-height: 30px;
+                text-transform: capitalize;
+                letter-spacing: 0.52px;
+                text-decoration: none;
+
+                &:hover
+                    color: $clr-4e4460;
+
+                &:active
+                    color: $clr-d0c6db;
+
+            &-date
+                color: $clr-c4c0cf;
+                font-family: "Roboto Slab";
+                font-size: 11px;
+                font-weight: 300;
+                line-height: 22px;
+                text-transform: uppercase;
+                letter-spacing: 0.44px;
+
+            &-reply
+                font-family: "Roboto Slab";
+                font-size: 11px;
+                font-weight: 300;
+                line-height: 22px;
+                text-transform: uppercase;
+                color: #ffd670;
+                letter-spacing: 0.44px;
+                text-decoration: none;
+
+                &:hover
+                    color: $clr-4e4460;
+
+                &:active
+                    color: $clr-d0c6db;
+
+            &-message
+                margin: 22px 0 0 0;
+                color: $clr-898d9d;
+                font-family: "Roboto Slab";
+                font-size: 13px;
+                font-weight: 300;
+                line-height: 25px;
+                letter-spacing: 0.52px;
+
+    &-item2-photo
+        padding: 0 0 0 100px;
+
+.blog-post-leave-reply
+    width: 100%;
+
+    &-title
+        display: block;
+        color: $clr-898d9d;
+        font-family: "Roboto Slab";
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+
+    &-desc
+        margin: 0 0 40px 0;
+        display: block;
+        color: $clr-898d9d;
+        font-family: "Roboto Slab";
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 30px;
+        letter-spacing: 0.52px;
+
+    &-form
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &-name
+            padding: 0 0 0 30px;
+            width: 48%;
+            height: 58px;
+            background-color: $clr-f8f8f8;
+            border: none;
+            outline: none;
+            color: $clr-cacaca;
+            font-family: "Roboto Slab";
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 30px;
+            letter-spacing: 0.64px;
+            box-sizing: border-box;
+            border-radius: 5px;
+
+        &-email
+            padding: 0 0 0 30px;
+            width: 48%;
+            height: 58px;
+            background-color: $clr-f8f8f8;
+            border: none;
+            outline: none;
+            color: $clr-cacaca;
+            font-family: "Roboto Slab";
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 30px;
+            letter-spacing: 0.64px;
+            box-sizing: border-box;
+            border-radius: 5px;
+
+        &-message
+            margin: 20px 0;
+            padding: 30px 0 0 30px;
+            display: block;
+            width: 100%;
+            height: 185px;
+            resize: none;
+            background-color: $clr-f8f8f8;
+            border: none;
+            outline: none;
+            color: $clr-cacaca;
+            font-family: "Roboto Slab";
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 30px;
+            letter-spacing: 0.64px;
+            box-sizing: border-box;
+            border-radius: 5px;
+
+        &-txt
+            color: $clr-cacaca;
+            font-family: "Roboto Slab";
+            font-size: 13px;
+            font-weight: 300;
+            line-height: 25px;
+            font-family: "Roboto Slab";
+            font-weight: 300;
+            letter-spacing: 0.52px;
+
+            &-b
+                font-weight: 700;
+
+        &-btn
+            margin: 34px auto 0 0;
+            width: 191px;
+            height: 56px;
+            background-color: $clr-ffd670;
+            border: none;
+            outline: none;
+            color: $clr-ffffff;
+            font-family: "Roboto Slab";
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 25px;
+            text-transform: uppercase;
+            letter-spacing: 0.56px;
+            border-radius: 5px;
+
+            &:hover
+                background-color: $clr-615474;
+                color: $clr-ffd670;
+
+            &:active
+                background-color: $clr-d0c6db;
+                color: $clr-615474;
+
+.aside-label
+    width: 50px;
+    height: 50px;
+    background-color: $clr-f8f8f8;
+    position: absolute;
+    top: 0;
+    right: 2%;
+
+    &-span
+        display: block;
+        width: 30px;
+        height: 6px;
+        background-color: $clr-ffd670;
+        position: absolute;
+        top: 22px;
+        left: 10px;
+
+        &::after
+            content: "";
+            display: block;
+            width: 30px;
+            height: 6px;
+            background-color: $clr-ffd670;
+            position: absolute;
+            top: 10px;
+            left: 0px;
+
+        &::before
+            content: "";
+            display: block;
+            width: 30px;
+            height: 6px;
+            background-color: $clr-ffd670;
+            position: absolute;
+            top: -10px;
+            left: 0px;
+
+    &-input
+        display: none;
+
+    &-input:checked ~ .blog-search
+        height: auto;
+        visibility: visible;
+        
+    &-input:checked + .aside-label > .aside-label-span
+        transform: rotate(45deg);
+
+    &-input:checked + .aside-label > .aside-label-span::before
+        transform: rotate(0deg);
+        top: 0;
+        left: 0;
+
+    &-input:checked + .aside-label > .aside-label-span::after
+        transform: rotate(90deg);
+        top: 0;
+        left: 0;
+
 .blog-search
     margin: 0;
     padding: 0 0 0 30px;
     width: 30.75%;
+    height: 0; //here!!!
+    visibility: hidden;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -1109,5 +1385,85 @@ html, body
         &:last-of-type
             border-bottom: 2px solid transparent;
             
+.blog-posts-slider
+    margin: 157px auto 0 auto;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
 
-       
+    &-item
+        width: 23%;
+
+        &-img
+            display: block;
+            width: 100%;
+            max-height: 295px;
+            height: 295px;
+            min-height: 59px;
+            background-color: $clr-ffd670;
+            border-radius: 10px 10px 0 0;
+
+        &-content
+            padding: 36px 0 35px 28px;
+            width: 100%;
+            background-color: $clr-f3f3f3;
+            border-radius: 0 0 10px 10px;
+            box-sizing: border-box;
+
+        &-title
+            color: $clr-373c4f;
+            font-family: "Roboto Slab";
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 22px;
+            text-transform: uppercase;
+            letter-spacing: 0.56px;
+
+        &-desc
+            color: $clr-898d9d;
+            font-family: "Roboto Slab";
+            font-size: 13px;
+            font-weight: 300;
+            line-height: 22px;
+            letter-spacing: 0.52px;
+
+        &-readmore
+            color: $clr-ffd670;
+            font-family: "Roboto Slab";
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: 0.52px;
+            text-decoration: none;
+            text-transform: capitalize;
+
+.blog-posts-slider-item:hover .blog-posts-slider-item-img
+    filter: brightness(.5);
+
+.blog-posts-slider-item:hover .blog-posts-slider-item-content
+    background-color: $clr-ffe39c;
+
+.blog-posts-slider-item:hover .blog-posts-slider-item-content > .blog-posts-slider-item-readmore
+    color: $clr-4e4460;
+
+.blog-posts-slider-item:hover .blog-posts-slider-item-content > .blog-posts-slider-item-readmore:hover
+    color: $clr-373c4f;
+    font-weight: 700;
+
+.blog-posts-slider-item:hover .blog-posts-slider-item-content > .blog-posts-slider-item-readmore:active
+    color: $clr-a5aabe;
+
+.blog-posts-slidebar
+    margin: 55px auto;
+    width: 85%;
+    height: 19px;
+    background-color: $clr-f3f3f3;
+    border-radius: 10px;
+
+    &-span
+        margin: 0 auto;
+        width: 33%;
+        height: 19px;
+        display: block;
+        background-color: $clr-ffd67;
+        border-radius: 10px;
