@@ -838,6 +838,24 @@ html, body {
   text-transform: lowercase;
 }
 
+.portfolio-content-project-desc-list-item-site-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Roboto Slab";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.64px;
+}
+
+.portfolio-content-project-desc-list-item-site-link:hover {
+  color: #524664;
+}
+
+.portfolio-content-project-desc-list-item-site-link:active {
+  color: #cacaca;
+}
+
 .portfolio-content-project-desc-txt {
   margin: 24px 0 12px 0;
   font-family: "Roboto Slab";
@@ -887,6 +905,7 @@ html, body {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   opacity: 0.65;
+  cursor: pointer;
 }
 
 .portfolio-content-slider-wrp-cross::after {
@@ -901,6 +920,7 @@ html, body {
   z-index: 2;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+  cursor: pointer;
 }
 
 .portfolio-content-slider-wrp-btn1-label {
@@ -912,6 +932,7 @@ html, body {
   left: 0;
   z-index: 1;
   border-radius: 0 20px 20px 0;
+  cursor: pointer;
 }
 
 .portfolio-content-slider-wrp-btn1-label:hover {
@@ -953,7 +974,7 @@ html, body {
 }
 
 .portfolio-content-slider-wrp-btn1-checkbox {
-  visibility: hidden;
+  display: none;
 }
 
 .portfolio-content-slider-wrp-btn2-label {
@@ -965,6 +986,7 @@ html, body {
   right: 0;
   z-index: 1;
   border-radius: 20px 0 0 20px;
+  cursor: pointer;
 }
 
 .portfolio-content-slider-wrp-btn2-label:hover {
@@ -1006,24 +1028,22 @@ html, body {
 }
 
 .portfolio-content-slider-wrp-btn2-checkbox {
-  visibility: hidden;
+  display: none;
 }
 
-.portfolio-content-slider-wrp-item1 {
+.portfolio-content-slider-wrp-item {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   background-color: #5c5766;
+  -webkit-transition: background-color linear 500ms;
+  transition: background-color linear 500ms;
 }
 
-.portfolio-content-slider-wrp-item2 {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+.portfolio-content-slider-wrp-btn2-checkbox:checked + .portfolio-content-slider-wrp-item {
+  background-color: #524664;
 }
 
 .nav__portfolio {
@@ -1962,26 +1982,36 @@ html, body {
           align-items: center;
 }
 
-.phrases-btns1 {
-  margin: 0 35px 0 0;
+.phrases-btns-btn {
+  margin: 0 35px;
   width: 36px;
   height: 36px;
-  border: 2px solid #fff;
+  border: 2px solid #ffffff;
   border-radius: 50%;
-  background-image: url(../img/arrow-phrases1.png);
-  background-repeat: no-repeat;
-  background-position: 45% 50%;
+  fill: #ffffff;
+  position: relative;
 }
 
-.phrases-btns2 {
-  margin: 0 0 0 35px;
-  width: 36px;
-  height: 36px;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  background-image: url(../img/arrow-phrases2.png);
-  background-repeat: no-repeat;
-  background-position: 55% 50%;
+.phrases-btns-btn1 > svg {
+  position: absolute;
+  top: 10px;
+  left: 11px;
+}
+
+.phrases-btns-btn2 > svg {
+  position: absolute;
+  top: 10px;
+  left: 14px;
+}
+
+.phrases-btns-btn:hover {
+  fill: #ffd670;
+  border: 2px solid #ffd670;
+}
+
+.phrases-btns-btn:active {
+  fill: #736588;
+  border: 2px solid #736588;
 }
 
 .logo__phrases {
@@ -2076,10 +2106,19 @@ html, body {
   letter-spacing: 0.52px;
 }
 
-.footer-span2 {
+.footer-link {
   color: #aaaaaa;
   font-family: "Roboto Slab";
   font-weight: 700;
   letter-spacing: 0.52px;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #524664;
+}
+
+.footer-link:active {
+  color: #cacaca;
 }
 /*# sourceMappingURL=style.css.map */
