@@ -137,6 +137,24 @@ $clr-c6a96c: #c6a96c;
                 min-width: 333px;
                 min-height: 207px;
 
+    .blog-posts-slider
+        margin: 57px auto 0 auto;
+
+        &::before
+            content: "";
+            margin: 0 auto 30px auto;
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: $clr-cacaca;
+
+    .blog-posts-slider-item
+        &:nth-last-of-type(3)
+            display: none;
+
+        &:nth-last-of-type(4)
+            display: none;
+
 @media screen and (max-width: 1320px)
     .logo__about-circle
         margin: 0 0 150px 0;
@@ -149,6 +167,24 @@ $clr-c6a96c: #c6a96c;
 
     .about-content-skills-meter__progress
         font-size: 12px;
+
+    .blog-posts-slider
+        margin: 57px auto 0 auto;
+
+        &::before
+            content: "";
+            margin: 0 auto 30px auto;
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: $clr-cacaca;
+
+    .blog-posts-slider-item
+        &:nth-last-of-type(3)
+            display: none;
+
+        &:nth-last-of-type(4)
+            display: none;
 
 @media screen and (max-width: 1235px)
     .header-content
@@ -196,6 +232,24 @@ $clr-c6a96c: #c6a96c;
     .contact-wrp-form
         width: 60%;
 
+    .blog-posts-slider
+        margin: 57px auto 0 auto;
+
+        &::before
+            content: "";
+            margin: 0 auto 30px auto;
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: $clr-cacaca;
+
+    .blog-posts-slider-item
+        &:nth-last-of-type(3)
+            display: none;
+
+        &:nth-last-of-type(4)
+            display: none;
+
 @media screen and (max-width: 1190px)
     .logo__header-social:last-of-type::after 
         left: 36px;
@@ -231,6 +285,24 @@ $clr-c6a96c: #c6a96c;
 
     .portfolio-projects2
         width: 85%;
+
+    .blog-posts-slider
+        margin: 57px auto 0 auto;
+
+        &::before
+            content: "";
+            margin: 0 auto 30px auto;
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: $clr-cacaca;
+
+    .blog-posts-slider-item
+        &:nth-last-of-type(3)
+            display: none;
+
+        &:nth-last-of-type(4)
+            display: none;
 
 @media screen and (max-width: 1000px)
     .header
@@ -323,6 +395,19 @@ $clr-c6a96c: #c6a96c;
         height: auto;
         visibility: visible;
 
+    .nav_header-input:checked + .nav_header-label > .nav_header-label-span
+        transform: rotate(45deg);
+
+    .nav_header-input:checked + .nav_header-label > .nav_header-label-span::before
+        transform: rotate(0deg);
+        top: 0;
+        left: 0;
+
+    .nav_header-input:checked + .nav_header-label > .nav_header-label-span::after
+        transform: rotate(90deg);
+        top: 0;
+        left: 0;
+
     .about
         padding: 60px 0 0 0;
 
@@ -347,3 +432,415 @@ $clr-c6a96c: #c6a96c;
 
         &-projects
             width: 60%;
+
+    .blog-wrp
+        margin: 60px 0 0 0;
+        flex-direction: column;
+        align-items: center;
+
+    .blog-post
+        order: 2;
+
+    .blog-search
+        margin: 0 auto 70px auto;
+        padding: 0;
+        order: 1;
+        width: 85%;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        &-input
+            padding: 15px;
+            width: 52px;
+            height: 52px;
+            font-size: 20px;
+
+        &-categories
+            padding: 0;
+
+        &-title
+            margin: 0 auto 30px auto;
+
+        &-div-search
+            margin: 0 auto 40px auto;
+            width: 85%;
+            align-items: center;
+            text-align: center;
+
+        &-div-categories
+            width: 49%;
+            align-items: center;
+            text-align: center;
+
+        &-div-archives
+            width: 49%;
+            align-items: center;
+            text-align: center;
+
+    .aside-label
+        width: 100px;
+        height: 100px;
+        top: -50px;
+        right: 50px;
+
+        &-span
+            width: 80px;
+            height: 15px;
+            top: 40px;
+
+            &::after
+                width: 80px;
+                height: 15px;
+                top: 20px;
+
+            &::before
+                width: 80px;
+                height: 15px;
+                top: -20px;
+
+    .blog-posts-slider
+        margin: 57px auto 0 auto;
+
+        &::before
+            content: "";
+            margin: 0 auto 30px auto;
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: $clr-cacaca;
+
+    .blog-posts-slider-item
+        &:nth-last-of-type(3)
+            display: none;
+
+        &:nth-last-of-type(4)
+            display: none;
+
+@media screen and (max-width: 910px)
+    .portfolio
+        padding: 0 0 1px 0;
+
+        &-projects
+            margin: 40px auto;
+
+        &-projects2
+            display: none;
+
+    .blog-posts-slider
+        width: 90%;
+
+        &-item
+            width: 50%;
+
+            &:nth-last-of-type(3)
+                display: none;
+
+            &:nth-last-of-type(4)
+                display: none;
+
+@media screen and (max-width: 810px)
+    .portfolio-projects
+        margin: 0px auto;
+        width: 57%;
+        min-height: 500px;
+
+        &-project
+            width: 200px;
+            height: 200px;
+            transform: rotate(0deg);
+
+            &-wrp
+                top: 30px;
+                left: -12px;
+                transform: rotate(0deg);
+
+            &-desc
+                margin: 20px 0;
+
+    .blog
+        padding: 0;
+
+        &-posts-slider
+            margin: 40px auto 0 auto;
+
+            &::before
+                content: "";
+                display: block;
+                width: 100%;
+                height: 1px;
+                background-color: $clr-cacaca;
+
+            &-item
+                margin: 20px auto;
+                width: 51%
+
+                &:nth-last-of-type(2)
+                    display: none;
+
+                &:nth-last-of-type(3)
+                    display: none;
+
+                &:nth-last-of-type(4)
+                    display: none;
+
+@media screen and (max-width: 735px)
+    .nav__header
+        margin: -170px 0 0 120px;
+
+    .nav_header-label
+        margin: 50px 30% 30px 68%;
+
+    .portfolio-projects
+        width: 85%;
+        min-height: 220px;
+
+        &-project
+            width: 150px;
+            height: 150px;
+
+            &-title
+                margin: -10px auto 15px auto;
+
+            &-desc
+                display: none;
+
+            &:first-of-type
+                display: none;
+
+    .blog-post
+        width: 70%;
+
+    .contact-wrp-form
+        width: 70%;
+
+@media screen and (max-width: 650px)
+    .header-content
+        margin: 90px auto 0 auto;
+
+    .logo__header
+        width: 100px;
+        height: 100px;
+
+        &::before
+            width: 150px;
+            height: 150px;
+
+        &-span
+            margin: 0 0 5px -34px;
+            font-size: 80px;
+
+    .nav_header-label
+        margin: 50px 30% 30px 63%;
+
+    .nav__header
+        margin: -170px 0 0 178px;
+        min-width: 200px;
+        width: 210px;
+
+        &-list-item-link
+            font-size: 28px;
+
+    .about-content-skills-meter
+        height: 55px;
+
+        &__progress
+            font-size: 12px;
+            line-height: 15px;
+
+    .about-content-skills
+        margin: 0 0 40px 0;
+        width: 95%;
+
+    .phrases
+        display: none;
+
+    .contact
+        background-color: $clr-373c4f;
+
+        &-wrp
+            margin: 40px auto;
+            justify-content: flex-start;
+            width: 60%;
+
+        &-item
+            margin: 20px 0;
+
+    .blog-search-input
+        margin: 20px 0 0 0;
+    
+    .blog-search-input:focus
+        width: 95%;
+
+    .blog-post-leave-reply-form
+        flex-direction: column;
+
+        &-name
+            width: 100%;
+
+        &-email
+            margin: 20px auto 0 auto;
+            width: 100%;
+
+@media screen and (max-width: 570px)
+    .nav__header
+        margin: 0px auto 0 auto;
+
+        &-list-item
+            width: 300px;
+
+        &-list-item-link
+            font-size: 60px;
+            line-height: 60px;
+
+    .header-content
+        margin: 45px auto 0 auto
+        left: 40%;
+
+    .nav_header-label
+        margin: 150px auto 30px auto;
+        height: 160px;
+
+    .portfolio-content-project
+        width: 90%;
+
+    .nav__portfolio
+        margin: 30px auto 0 auto;
+
+    .nav__portfolio-list
+        width: 100%;
+        flex-direction: column;
+
+        &-item
+            width: 60%;
+
+            &-link
+                height: 35px;
+
+    .about-content-txt
+        width: 90%;
+
+    .about-content-skills-meter
+        height: 55px;
+
+        &__progress
+            font-size: 12px;
+            line-height: 15px;
+
+    .portfolio-projects
+        margin: 15px auto;
+        flex-direction: column;
+
+        &-project
+            margin: 10px;
+            width: 300px;
+            height: 200px;
+
+            &-wrp
+                left: -12px;
+
+            &-title
+                margin: 0 auto;
+
+            &-desc
+                display: block;
+
+    .blog-post
+        width: 90%;
+
+    .blog-search
+        width: 90%;
+
+@media screen and (max-width: 460px)
+    .nav__header
+        width: 300px;
+    .about-content-skills-meter__progress
+        font-size: 12px;
+        line-height: 15px;
+
+    .nav__portfolio-list
+        margin: 0 auto;
+        max-width: 250px;
+
+    .portfolio-projects-project
+        margin: 5px;
+        width: 90%;
+        min-width: 205px;
+
+    .blog-post-comments-item-photo-img
+        display: none;
+
+    .blog-post-comments-item-txt
+        margin: 0;
+
+    .blog-post-comments-item2-photo
+        padding: 0 0 0 30px;
+
+    .blog-post-comments-item-txt-message
+        font-size: 12px;
+
+    .contact-logo
+        margin: 0 15px 0 0;
+        width: 45px;
+        height: 45px;
+
+    .contact-txt
+        font-size: 16px;
+
+    .contact-wrp
+        margin: 20px auto;
+        width: 95%;
+        justify-content: center;
+
+        &-form
+            width: 90%;
+
+    .blog-posts-slider-item
+        width: 90%;
+
+        &-img
+            height: 220px;
+            min-width: 245px;
+
+        &-content
+            padding: 35px 25px;
+            min-width: 245px;
+
+    .footer
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+@media screen and (max-width: 420px)
+    .nav__header
+        width: 98%;
+
+        &-list-item
+            width: 98%;
+
+    .nav__header-list-item-link
+        font-size: 50px;
+        line-height: 50px;
+
+    .header-content
+        left: 32%;
+
+
+    .about-social
+        min-width: 180px;
+
+    .nav__portfolio
+        min-width: 250px;
+
+    .portfolio-projects-project-wrp
+        left: 0;
+        width: 100%;
+
+    .portfolio-projects-project-link-span
+        top: 19px;
+        left: 10px;
+
+    .aside-label
+        right: 18px;

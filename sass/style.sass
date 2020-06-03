@@ -1049,6 +1049,14 @@ html, body
             font-family: "Roboto Slab";
             font-weight: 300;
             letter-spacing: 0.52px;
+            text-decoration: none;
+
+            &:hover
+                color: $clr-524664;
+                font-weight: 400;
+
+            &:active
+                color: $clr-cacaca;
 
         &::before
             content: "";
@@ -1407,6 +1415,13 @@ html, body
 
         &:last-of-type
             border-bottom: 2px solid transparent;
+
+.blog-search-div-search,
+.blog-search-div-categories,
+.blog-search-div-archives
+    display: flex;
+    flex-direction: column;
+
             
 .blog-posts-slider
     margin: 157px auto 0 auto;
@@ -1614,6 +1629,7 @@ html, body
     width: 100%;
     border-top: 1px solid $clr-cacaca;
     text-align: center;
+    box-sizing: border-box;
 
     &-span
         color: #cacaca;
